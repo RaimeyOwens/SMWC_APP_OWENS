@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
 
   </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="index" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">St. Mary of the Woods</a>
+      <h2 class = "navbar-brand">St. Mary of the Woods</h2>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -134,16 +134,36 @@
       <p><span class="glyphicon glyphicon-phone"></span>Phone: (812) 535-5151</p>
       <p><span class="glyphicon glyphicon-envelope"></span>E-mail: smwc@smwc.edu</p>
     </div>
+
     <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+
+      <form id="contactForm">
+
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+
+        <br>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
         </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+
+      </form>
+
+    </div>
+  </div>
+
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
@@ -152,7 +172,11 @@
       </div>
     </div>
   </div>
+
+  
   <br>
+
+
   <h3 class="text-center">Helpful Departments</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Academic Affairs</a></li>
@@ -164,6 +188,7 @@
     
   </ul>
 
+  <div class="tab-section"> 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h2>Academic Affairs</h2>
@@ -191,6 +216,7 @@
     </div>
   </div>
 </div>
+</div>
 
 <hr>
 <h2 style="text-align: center;">The Campus Map & Google Map of the School</h2>
@@ -203,7 +229,7 @@
 
 <!-- Footer -->
 <footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+  <a class="up-arrow" href="#index" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br>
   <p>Back to top</p> 
