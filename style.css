@@ -136,7 +136,7 @@
 .map-container {
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .map-img {
@@ -237,4 +237,38 @@
   margin-right: 0;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+
+/* WEATHER CSS */
+#weather-section {
+  padding: 60px 20px;
+}
+
+/* Title styling */
+.section-title {
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+/* Paragraph cleanup */
+.weather-description {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+}
+
+/* Weather card  */
+.weather-card {
+  background: #f4f4f4;
+  padding: 25px;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 250px;
+}
+
+/* Optional: make temp bigger later */
+#weatherText {
+  font-size: 18px;
+  margin-top: 10px;
 }
